@@ -1,0 +1,309 @@
+{
+    "Import React": {
+        "prefix": "ir",
+        "body": [
+            "import React from 'react';\n"
+        ],
+        "description": "Imports React"
+    },
+    "Import React and Component": {
+        "prefix": "irc",
+        "body": [
+            "import React, { Component } from 'react';\n"
+        ],
+        "description": "Imports React, { Component }"
+    },
+    "Import React and ReactDOM": {
+        "prefix": "irrd",
+        "body": [
+            "import React from 'react';\n",
+            "import ReactDOM from 'react-dom/client';"
+        ],
+        "description": "Imports react and ReactDOM"
+    },
+    "Import ReactDOM": {
+        "prefix": "ird",
+        "body": [
+            "import ReactDOM from 'react-dom/client';"
+        ],
+        "description": "Imports ReactDOM"
+    },
+    "Import React & { useState }": {
+        "prefix": "irs",
+        "body": [
+            "import React, { useState } from 'react';\n"
+        ],
+        "description": "Imports React & { useState }"
+    },
+    "Import React & Basic Hooks { useState, useEffect, useContext }": {
+        "prefix": "irbh",
+        "body": [
+            "import React, { useState, useEffect, useContext } from 'react';\n"
+        ],
+        "description": "Imports React & the basic hooks"
+    },
+    "Import Basic Hooks { useState, useEffect, useContext }": {
+        "prefix": "ibh",
+        "body": [
+            "import React, { useState, useEffect, useContext } from 'react';\n"
+        ],
+        "description": "Imports the basic hooks { useState, useEffect, useContext }"
+    },
+    "Import PropTypes": {
+        "prefix": "ipt",
+        "body": [
+            "import PropTypes from 'prop-types';"
+        ],
+        "description": "Imports PropTypes"
+    },
+    "Import Pure Component": {
+        "prefix": "ipc",
+        "body": [
+            "import React, { PureComponent } from 'react';\n"
+        ],
+        "description": "Imports React & { PureComponent }"
+    },
+    "React Class Component": {
+        "prefix": "rcc",
+        "body": "import React, { Component } from 'react';\n\nclass ${1:${TM_FILENAME_BASE}} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\nexport default ${1:${TM_FILENAME_BASE}};",
+        "description": "Creates a React component class with ES6 module system"
+    },
+    "React Class Pure Component": {
+        "prefix": "rcpc",
+        "body": [
+            "import React, { PureComponent } from 'react';",
+            "\n\nclass ${1:${TM_FILENAME_BASE}} extends PureComponent {",
+            "\tstate = { $2 }",
+            "\trender() { ",
+            "\t\treturn ( $0 );",
+            "\t}",
+            "}",
+            " ",
+            "export default ${1:${TM_FILENAME_BASE}};"
+        ],
+        "description": "React Class Pure Component"
+    },
+    "Constructor Props Context": {
+        "prefix": "cpc",
+        "body": "constructor(props, context) {\n\tsuper(props, context);\n\t$0\n}\n",
+        "description": "Adds a default constructor for the class that contains props and context as arguments"
+    },
+    "React Redux Dispatch Component": {
+        "prefix": "rrdc",
+        "body": "import React, { Component } from 'react';\nimport { connect } from 'react-redux';\n\nfunction mapStateToProps(state) {\n\treturn {\n\n\t};\n}\n\nfunction mapDispatchToProps(dispatch) {\n\treturn {\n\n\t};\n}\n\nclass ${1:${TM_FILENAME_BASE}} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\nexport default connect(\n\tmapStateToProps,\n)(${1:${TM_FILENAME_BASE}});",
+        "description": "Creates a React component class connected to redux with dispatch"
+    },
+    "React Arrow Function Component": {
+        "prefix": "rafc",
+        "body": [
+            "import React from 'react'",
+            "",
+            "const ${1:${TM_FILENAME_BASE}} = () => {",
+            "  return (",
+            "    <div>${1:first}</div>",
+            "  )",
+            "}",
+            "",
+            "export default ${1:${TM_FILENAME_BASE}}"
+        ],
+        "description": "Creates a React arrow function component"
+    },
+    "React Arrow Function Component Props": {
+        "prefix": "rafcp",
+        "body": [
+            "import React from 'react';\nimport PropTypes from 'prop-types';\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\t$0\n};\n\nfunction ${1:${TM_FILENAME_BASE}}(props) {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t);\n}\n\nexport default ${1:${TM_FILENAME_BASE}};",
+        ],
+        "description": "Creates a stateless React component as a named function with PropTypes"
+    },
+    "React Function Component": {
+        "prefix": "rfc",
+        "body": [
+            "import React from 'react'",
+            "",
+            "function ${1:${TM_FILENAME_BASE}} ($2) {",
+            "  return (",
+            "    <div>${1:first}</div>",
+            "  )",
+            "}",
+            "",
+            "export default ${1:${TM_FILENAME_BASE}}"
+        ],
+        "description": "Creates a React function component"
+    },
+    "Arrow Function Syntax Component": {
+        "prefix": "afsc",
+        "body": [
+            "const $1 = ($2) => {",
+            "  return ( $0 )",
+            "}",
+            "",
+            "export default $1;"
+        ],
+        "description": "Function Syntax Component"
+    },
+    "Function Syntax Component": {
+        "prefix": "fsc",
+        "body": [
+            "function $1($2) {",
+            "\treturn ( $0 );",
+            "}",
+            "",
+            "export default $1;"
+        ],
+        "description": "Function Syntax Component"
+    },
+    "useEffect": {
+        "prefix": "ueh",
+        "body": [
+            "useEffect(() => {",
+            "\t$1",
+            "}, []);"
+        ],
+        "description": "useEffect Hook"
+    },
+    "useState": {
+        "prefix": "ush",
+        "body": [
+            "const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState($2);"
+        ],
+        "description": "Declare a state variable using the useState Hook"
+    },
+    "useContext": {
+        "prefix": "uch",
+        "body": [
+            "const ${1} = useContext(${1}Context);"
+        ],
+        "description": "Declare a context variable using the useContext Hook"
+    },
+    "useRef": {
+        "prefix": "urh",
+        "body": [
+            "const ${1}Ref = useRef( ${2} );"
+        ],
+        "description": "Declare a ref variable using the useRef Hook"
+    },
+    "useReducer": {
+        "prefix": "urdh",
+        "body": [
+            "const [state, dispatch] = useReducer(${1});"
+        ],
+        "description": "Declare a reducer variable using the useReducer Hook"
+    },
+    "useMemo": {
+        "prefix": "umh",
+        "body": [
+            "const ${1} = useMemo(${2});"
+        ],
+        "description": "Declare a memo variable using the useMemo Hook"
+    },
+    "useTransition": {
+        "prefix": "uth",
+        "body": [
+            "const [isPending, ${1}startTransition] = useTransition(${2});"
+        ],
+        "description": "Declare a transition variable using the useTransition Hook"
+    },
+    "Render": {
+        "prefix": "ren",
+        "body": "render() {\n\treturn (\n\t\t<>\n\t\t\t$0\n\t\t</>\n\t);\n}",
+        "description": "Render"
+    },
+    "componentDidMount": {
+        "prefix": "cdm",
+        "body": [
+            "componentDidMount() {",
+            "\t$0",
+            "}"
+        ],
+        "description": "componentDidMount"
+    },
+    "componentWillMount": {
+        "prefix": "cwm",
+        "body": [
+            "//WARNING! To be deprecated in React v17. Use componentDidMount instead.",
+            "componentWillMount() {",
+            "\t$0",
+            "}"
+        ],
+        "description": "componentWillMount"
+    },
+    "componentWillReceiveProps": {
+        "prefix": "cwrp",
+        "body": [
+            "//WARNING! To be deprecated in React v17. Use new lifecycle static getDerivedStateFromProps instead.",
+            "componentWillReceiveProps(nextProps) {",
+            "\t$0",
+            "}"
+        ],
+        "description": "componentWillReceiveProps"
+    },
+    "getDerivedStateFromProps": {
+        "prefix": "gds",
+        "body": [
+            "static getDerivedStateFromProps(nextProps, prevState) {",
+            "\t$0",
+            "}"
+        ],
+        "description": "getDerivedStateFromProps"
+    },
+    "shouldComponentUpdate": {
+        "prefix": "scu",
+        "body": [
+            "shouldComponentUpdate(nextProps, nextState) {",
+            "\t$0",
+            "}"
+        ],
+        "description": "shouldComponentUpdate"
+    },
+    "componentWillUpdate": {
+        "prefix": "cwu",
+        "body": [
+            "//WARNING! To be deprecated in React v17. Use componentDidUpdate instead.",
+            "componentWillUpdate(nextProps, nextState) {",
+            "\t$0",
+            "}"
+        ],
+        "description": "componentWillUpdate"
+    },
+    "componentDidUpdate": {
+        "prefix": "cdu",
+        "body": [
+            "componentDidUpdate(prevProps, prevState) {",
+            "\t$0",
+            "}"
+        ],
+        "description": "componentDidUpdate"
+    },
+    "componentWillUnmount": {
+        "prefix": "cwun",
+        "body": [
+            "componentWillUnmount() {",
+            "\t$0",
+            "}"
+        ],
+        "description": "componentWillUnmount"
+    },
+    "componentDidCatch": {
+        "prefix": "cdc",
+        "body": [
+            "componentDidCatch(error, info) {",
+            "\t$0",
+            "}"
+        ],
+        "description": "componentDidCatch"
+    },
+    "getSnapshotBeforeUpdate": {
+        "prefix": "gsbu",
+        "body": [
+            "getSnapshotBeforeUpdate(prevProps, prevState) {",
+            "\t$0",
+            "}"
+        ],
+        "description": "getSnapshotBeforeUpdate"
+    },
+    "componentSetStateObject": {
+        "prefix": "sst",
+        "body": "this.setState($0);",
+        "description": "Performs a shallow merge of nextState into current state"
+    }
+}

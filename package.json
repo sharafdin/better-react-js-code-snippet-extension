@@ -1,0 +1,22 @@
+{
+  "name": "better-reactjs-code-snippet",
+  "displayName": "Better ReactJS Code Snippet",
+  "description": "This extension helps you to write ReactJs 10x faster.",
+  "version": "0.0.1",
+  "publisher": "Sharafdin",
+  "icon": "icon.jpg",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
