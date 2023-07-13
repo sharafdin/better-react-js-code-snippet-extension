@@ -31,8 +31,8 @@ export default HelloWorld;
 
 |  Prefix | Method                                              |
 | ------: | --------------------------------------------------- |
-|  `ir→` | `Imports react`                   |
-|  `irc→` | `Imports React, { Component }`                                   |
+|  `ir` | `Imports react`                   |
+|  `irc` | `Imports React, { Component }`                                   |
 |  `irrd` | `Imports react and ReactDOM`       |
 |  `ird` | `Imports ReactDOM`       |
 |  `irs` | `Imports React & { useState }`                   |
