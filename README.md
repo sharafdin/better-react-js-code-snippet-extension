@@ -91,7 +91,7 @@ export default App;
 
 ### Developers
 
-This extension developed by [Sharafdin](https:www.sharafdin.com) <br />
+This extension developed by [Sharafdin](https://www.sharafdin.com) <br />
 [GitHub](https://github.com/sharafdin) |
 [Twitter](https://twitter.com/sharafdincorp) |
 [LinkedIn](https://www.linkedin.com/company/sharafdin/)
