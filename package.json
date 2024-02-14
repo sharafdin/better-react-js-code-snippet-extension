@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "publisher": "Sharafdin",
   "icon": "icon.jpg",
+  "repository": "https://github.com/sharafdin/better-react-js-code-snippet-extension",
   "engines": {
     "vscode": "^1.80.0"
   },
