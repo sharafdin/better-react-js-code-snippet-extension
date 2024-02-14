@@ -65,7 +65,7 @@ export default HelloWorld;
 | `cwu` | `componentWillUpdate`                                   |
 | `cdu` | `componentDidUpdate`                                   |
 | `cwun` | `componentWillUnmount`                                   |
-| `cdc;` | `componentDidCatch`                                   |
+| `cdc` | `componentDidCatch`                                   |
 | `gsbu` | `getSnapshotBeforeUpdate`                                   |
 | `sst` | `Performs a shallow merge of nextState into current state`                                   |
 |                                |
