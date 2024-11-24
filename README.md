@@ -1,5 +1,6 @@
-# Better React JS Code Snippet
+# This extension is no longer maintained and has been discontinued.
 
+# Better React JS Code Snippet
 
 This extension helps you to write ReactJs 10x faster.
 
